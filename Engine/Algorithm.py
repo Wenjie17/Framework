@@ -133,7 +133,6 @@ class TradingAlgorithm(object):
 
         self.realtimeView = self.trading_environment.RealTimeView
 
-        #
         self._instruments = {}
         # No more UTCDateTime
         # self._currentUTCDatetime = Gadget.ToUTCDateTime(self.simulator_parameters.DateTime1)
@@ -150,7 +149,6 @@ class TradingAlgorithm(object):
         for instrument in instruments:
             self._instruments[instrument["Symbol"]] = instrument
 
-        #
         if self._initialize:
             self._initialize(self, context)
 

@@ -52,13 +52,11 @@ class TradingCalendar(object):
     def __init__(self):
         # Midnight in UTC for each trading day.
         self._currentDateTime = None
-
     def GetNextDay(self):
         pass
 
 
 class ShangHaiExchangeCalendar(TradingCalendar):
-
     @property
     def Name(self):
         return "SH"

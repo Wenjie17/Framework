@@ -18,18 +18,14 @@ def Initialize(api, context):
     print("initialize")
     pass
 
-
 def HandledData(api, context, data, dt):
     pass
-
 
 def OnMonthly(api, context, dt):
     print("  --On Monthly-- " + str(dt))
     portfolio = api.Portfolio()
     # print(portfolio.Value)
-
     position = api.Position("000001.SZ")
-
     symbols = []
     symbols.append({"Symbol": "000001.SZ"})
     api.Rebalance(symbols)
@@ -64,7 +60,6 @@ strategy = TradingAlgorithm(name="TestStrategy",
                             trading_environment=tradingEnvironment)
 
 context = {}
-
 instruments = Gadget.FindListedInstrument(database, datetime1, datetime2)
 context["Instruments"] = instruments
 
