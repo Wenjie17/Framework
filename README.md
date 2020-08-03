@@ -7,4 +7,4 @@
 
 Reference: Zipline - https://www.zipline.io/beginner-tutorial.html
 
-Mentor: Shimeng Feng
+Mentor: Feng
